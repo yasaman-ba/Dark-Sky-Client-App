@@ -5,11 +5,15 @@ For running this app first you need registere as developer in " darksky.net " we
 you will use these websites : 
 
 http://www.jsonschema2pojo.org/
-#******
+
+
 http://square.github.io/retrofit/
-#******
+
+
 https://github.com/greenrobot/EventBus#add-eventbus-to-your-project
-#******
+
+
 https://mvnrepository.com/artifact/com.google.code.gson/gson/2.7
-#******
+
+
 http://jakewharton.github.io/butterknife/
