@@ -1,0 +1,290 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From Pushe-1.0.0:
+* R.txt
+* proguard.txt
+From WallpaperWorld:
+* My Host Details.docx
+* New Microsoft Word Document.docx
+* WallpaperWorld.apk
+* WallpaperWorldKeyStore
+* ic_launcher-web.png
+* proguard-project.txt
+From google-play-services-base-9.4.0:
+* proguard.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.+
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+google-play-services-basement-9.4.0 => [com.google.android.gms:play-services:+]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In Pushe-1.0.0:
+* AndroidManifest.xml => pushe100\src\main\AndroidManifest.xml
+* libs\android-job-1.0.13.jar => pushe100\libs\android-job-1.0.13.jar
+* libs\cat-1.0.4.jar => pushe100\libs\cat-1.0.4.jar
+* libs\play-services-gcm-9.4.0.jar => pushe100\libs\play-services-gcm-9.4.0.jar
+* libs\play-services-iid-9.4.0.jar => pushe100\libs\play-services-iid-9.4.0.jar
+* libs\play-services-tasks-9.4.0.jar => pushe100\libs\play-services-tasks-9.4.0.jar
+* libs\pushe-1.0.0.jar => pushe100\libs\pushe-1.0.0.jar
+* libs\sentry-android-1.2.2.jar => pushe100\libs\sentry-android-1.2.2.jar
+* res\ => pushe100\src\main\res\
+In google-play-services-base-9.4.0:
+* AndroidManifest.xml => googleplayservicesbase940\src\main\AndroidManifest.xml
+* libs\google-play-services-base-9.4.0.jar => googleplayservicesbase940\libs\google-play-services-base-9.4.0.jar
+* res\ => googleplayservicesbase940\src\main\res\
+In WallpaperWorld:
+* amazon2.JPG => amazon2.jpg
+* amazon3.JPG => amazon3.jpg
+* amazon4.JPG => amazon4.jpg
+* amazon5.JPG => amazon5.jpg
+* amazon6.JPG => amazon6.jpg
+* amazon7.JPG => amazon7.jpg
+* amazon8.JPG => amazon8.jpg
+* amsterdam1.JPG => amsterdam1.jpg
+* amsterdam2.JPG => amsterdam2.jpg
+* amsterdam3.JPG => amsterdam3.jpg
+* amsterdam4.JPG => amsterdam4.jpg
+* amsterdam5.JPG => amsterdam5.jpg
+* amsterdam6.JPG => amsterdam6.jpg
+* amsterdam7.JPG => amsterdam7.jpg
+* aurora3.JPG => aurora3.jpg
+* aurora4.JPG => aurora4.jpg
+* aurora5.JPG => aurora5.jpg
+* aurora6.JPG => aurora6.jpg
+* australia1.JPG => australia1.jpg
+* australia10.JPG => australia10.jpg
+* australia2.JPG => australia2.jpg
+* australia3.JPG => australia3.jpg
+* australia4.JPG => australia4.jpg
+* australia5.JPG => australia5.jpg
+* australia7.JPG => australia7.jpg
+* australia8.JPG => australia8.jpg
+* australia9.JPG => australia9.jpg
+* background.PNG => background.png
+* background_list.PNG => background_list.png
+* blossomjapan3.JPG => blossomjapan3.jpg
+* blossomjapan4.JPG => blossomjapan4.jpg
+* blossomjapan5.JPG => blossomjapan5.jpg
+* cambodia1.JPG => cambodia1.jpg
+* cambodia2.JPG => cambodia2.jpg
+* cambodia4.JPG => cambodia4.jpg
+* cambodia8.JPG => cambodia8.jpg
+* cambodia9.JPG => cambodia9.jpg
+* china2.JPG => china2.jpg
+* china3.JPG => china3.jpg
+* china6.JPG => china6.jpg
+* china7.JPG => china7.jpg
+* christredeemer1.JPG => christredeemer1.jpg
+* christredeemer2.JPG => christredeemer2.jpg
+* christredeemer3.JPG => christredeemer3.jpg
+* christredeemer4.JPG => christredeemer4.jpg
+* christredeemer5.JPG => christredeemer5.jpg
+* coffeeshopturkey1.JPG => coffeeshopturkey1.jpg
+* coffeeshopturkey5.JPG => coffeeshopturkey5.jpg
+* coffeeshopturkey6.JPG => coffeeshopturkey6.jpg
+* cuba1.JPG => cuba1.jpg
+* cuba2.JPG => cuba2.jpg
+* cuba3.JPG => cuba3.jpg
+* cuba4.JPG => cuba4.jpg
+* cuba5.JPG => cuba5.jpg
+* cuba6.JPG => cuba6.jpg
+* cuba7.JPG => cuba7.jpg
+* cuba8.JPG => cuba8.jpg
+* cuba9.JPG => cuba9.jpg
+* AndroidManifest.xml => wallpaperWorld\src\main\AndroidManifest.xml
+* assets\ => wallpaperWorld\src\main\assets
+* lint.xml => wallpaperWorld\lint.xml
+* res\ => wallpaperWorld\src\main\res\
+* src\ => wallpaperWorld\src\main\java\
+* src\com\farsitel\bazaar\IUpdateCheckService.aidl => wallpaperWorld\src\main\aidl\com\farsitel\bazaar\IUpdateCheckService.aidl
+* dashtelut1.JPG => dashtelut1.jpg
+* dashtelut2.JPG => dashtelut2.jpg
+* dashtelut3.JPG => dashtelut3.jpg
+* egypt1.JPG => egypt1.jpg
+* egypt4.JPG => egypt4.jpg
+* egypt5.JPG => egypt5.jpg
+* egypt6.JPG => egypt6.jpg
+* egypt7.JPG => egypt7.jpg
+* egypt8.JPG => egypt8.jpg
+* eiffeltower2.JPG => eiffeltower2.jpg
+* eiffeltower4.JPG => eiffeltower4.jpg
+* eiffeltower6.JPG => eiffeltower6.jpg
+* grandcanyon1.JPG => grandcanyon1.jpg
+* grandcanyon3.JPG => grandcanyon3.jpg
+* grandcanyon4.JPG => grandcanyon4.jpg
+* grandcanyon5.JPG => grandcanyon5.jpg
+* grandcanyon6.JPG => grandcanyon6.jpg
+* grandcanyon8.JPG => grandcanyon8.jpg
+* heidelberg2.JPG => heidelberg2.jpg
+* heidelberg3.JPG => heidelberg3.jpg
+* heidelberg4.JPG => heidelberg4.jpg
+* heidelberg5.JPG => heidelberg5.jpg
+* indonesia1.JPG => indonesia1.jpg
+* indonesia10.JPG => indonesia10.jpg
+* indonesia11.JPG => indonesia11.jpg
+* indonesia12.JPG => indonesia12.jpg
+* indonesia3.JPG => indonesia3.jpg
+* indonesia5.JPG => indonesia5.jpg
+* italy1.JPG => italy1.jpg
+* italy2.JPG => italy2.jpg
+* italy3.JPG => italy3.jpg
+* italy4.JPG => italy4.jpg
+* italy5.JPG => italy5.jpg
+* italy6.JPG => italy6.jpg
+* italy7.JPG => italy7.jpg
+* italy8.JPG => italy8.jpg
+* lavenderfields1.JPG => lavenderfields1.jpg
+* lavenderfields3.JPG => lavenderfields3.jpg
+* lavenderfields4.JPG => lavenderfields4.jpg
+* lavenderfields5.JPG => lavenderfields5.jpg
+* machupicchu2.JPG => machupicchu2.jpg
+* machupicchu3.JPG => machupicchu3.jpg
+* machupicchu4.JPG => machupicchu4.jpg
+* machupicchu5.JPG => machupicchu5.jpg
+* machupicchu6.JPG => machupicchu6.jpg
+* machupicchu7.JPG => machupicchu7.jpg
+* madagascar2.JPG => madagascar2.jpg
+* madagascar3.JPG => madagascar3.jpg
+* madagascar4.JPG => madagascar4.jpg
+* madagascar5.JPG => madagascar5.jpg
+* madagascar6.JPG => madagascar6.jpg
+* maldive2.JPG => maldive2.jpg
+* maldive4.JPG => maldive4.jpg
+* maldive6.JPG => maldive6.jpg
+* maldive7.JPG => maldive7.jpg
+* maldive8.JPG => maldive8.jpg
+* maldive9.JPG => maldive9.jpg
+* newzealand1.JPG => newzealand1.jpg
+* newzealand4.JPG => newzealand4.jpg
+* nycentralpark1.JPG => nycentralpark1.jpg
+* nycentralpark2.JPG => nycentralpark2.jpg
+* nycentralpark4.JPG => nycentralpark4.jpg
+* nycentralpark5.JPG => nycentralpark5.jpg
+* plitvicelake2.JPG => plitvicelake2.jpg
+* plitvicelake4.JPG => plitvicelake4.jpg
+* plitvicelake6.JPG => plitvicelake6.jpg
+* plitvicelake7.JPG => plitvicelake7.jpg
+* plitvicelake8.JPG => plitvicelake8.jpg
+* santorini1.JPG => santorini1.jpg
+* santorini2.JPG => santorini2.jpg
+* santorini4.JPG => santorini4.jpg
+* santorini5.JPG => santorini5.jpg
+* santorini6.JPG => santorini6.jpg
+* santorini7.JPG => santorini7.jpg
+* santorini8.JPG => santorini8.jpg
+* santorini9.JPG => santorini9.jpg
+* serengeti1.JPG => serengeti1.jpg
+* serengeti2.JPG => serengeti2.jpg
+* serengeti4.JPG => serengeti4.jpg
+* serengeti5.JPG => serengeti5.jpg
+* serengeti7.JPG => serengeti7.jpg
+* serengeti9.JPG => serengeti9.jpg
+* singapore2.JPG => singapore2.jpg
+* singapore4.JPG => singapore4.jpg
+* singapore6.JPG => singapore6.jpg
+* singapore7.JPG => singapore7.jpg
+* singapore8.JPG => singapore8.jpg
+* startpage_1.PNG => startpage_1.png
+* startpage_2.PNG => startpage_2.png
+* switzerland1.JPG => switzerland1.jpg
+* switzerland12.JPG => switzerland12.jpg
+* switzerland3.JPG => switzerland3.jpg
+* switzerland4.JPG => switzerland4.jpg
+* switzerland5.JPG => switzerland5.jpg
+* switzerland6.JPG => switzerland6.jpg
+* switzerland7.JPG => switzerland7.jpg
+* switzerland8.JPG => switzerland8.jpg
+* tajmahal1.JPG => tajmahal1.jpg
+* tajmahal2.JPG => tajmahal2.jpg
+* tajmahal3.JPG => tajmahal3.jpg
+* tajmahal4.JPG => tajmahal4.jpg
+* tajmahal5.JPG => tajmahal5.jpg
+* tuscany2.JPG => tuscany2.jpg
+* tuscany3.JPG => tuscany3.jpg
+* tuscany6.JPG => tuscany6.jpg
+* yellowstone1.JPG => yellowstone1.jpg
+* yellowstone2.JPG => yellowstone2.jpg
+* yellowstone4.JPG => yellowstone4.jpg
+* yellowstone5.JPG => yellowstone5.jpg
+* yellowstone6.JPG => yellowstone6.jpg
+
+Missing Android Support Repository:
+-----------------------------------
+Some useful libraries, such as the Android Support Library, are
+installed from a special Maven repository, which should be installed
+via the SDK manager.
+
+It looks like this library is missing from your SDK installation at:
+null
+
+To install it, open the SDK manager, and in the Extras category,
+select "Android Support Repository". You may also want to install the
+"Google Repository" if you want to use libraries like Google Play
+Services.
+
+Missing Google Repository:
+--------------------------
+The Google Play Services library is installed from a special Maven
+Repository, which should be installed via the SDK manager.
+
+It looks like this library is missing from your SDK installation at:
+null
+
+To install it, open the SDK manager, and in the Extras category,
+select "Google Repository".
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
